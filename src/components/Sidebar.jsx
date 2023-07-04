@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import logout from "./../assets/logout.svg";
 import add from "./../assets/add.svg";
+import logo from "./../assets/edsuLogo.svg";
 
 // Non-active icons
 import patientIcon from "./../assets/patients.svg";
@@ -68,6 +69,13 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sideUp">
+        <div className="sidebarLogo">
+          <img src={logo} alt="" />
+          <h3>
+            Edo State
+            <br /> University
+          </h3>
+        </div>
         {sidebarItems.map((item, i) => (
           <NavLink
             to={item.path}

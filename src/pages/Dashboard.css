@@ -1,8 +1,13 @@
 .dashboard {
-  padding: 2.9rem 4rem 0 4.2rem;
+  padding: 2.9rem 4rem 0 4rem;
   width: 100%;
   display: flex;
   gap: 2.9rem;
+}
+
+.dashStats {
+  display: flex;
+  justify-content: space-between;
 }
 
 .dashboardAnalytics {
@@ -11,7 +16,7 @@
   height: 34.2rem;
   padding: 2rem 2.3rem;
   background-color: white;
-  margin-top: 3.2rem;
+  margin-top: 2rem;
   border-radius: 8px;
 }
 
@@ -43,7 +48,7 @@
 }
 
 .dashLeft {
-  width: 100%;
+  width: 62rem;
 }
 
 .genderAnalytics {

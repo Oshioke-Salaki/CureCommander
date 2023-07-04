@@ -1,6 +1,6 @@
 .sidebar {
   width: 18%;
-  padding: 10.7rem 2.6rem 5.9rem 3.9rem;
+  padding: 1.8rem 2.6rem 5.9rem 3.9rem;
   /* background: red; */
   height: 100%;
   display: flex;
@@ -8,7 +8,23 @@
   /* align-items: center; */
   justify-content: space-between;
 }
+.sidebarLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.1rem;
+}
 
+.sidebarLogo img {
+  margin-right: 1.4rem;
+}
+
+.sidebarLogo h3 {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 .sidebar .logo {
   margin-bottom: 6.4rem;
 }
@@ -74,7 +90,7 @@
   line-height: normal;
   text-decoration: none;
   padding-left: 1.4rem;
-  margin-top: 8rem !important;
+  margin-top: 3rem !important;
   display: flex;
   align-items: center;
 }

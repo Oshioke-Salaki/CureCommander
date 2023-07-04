@@ -1,0 +1,137 @@
+.recentPatients {
+  padding: 2rem 2.9rem;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.recentPatientsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rpTopLeft,
+.rpTopRight {
+  display: flex;
+  align-items: center;
+}
+
+.rpTopLeft h2 {
+  color: var(--black-text, #131313);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 2.5rem;
+}
+
+.rpTopLeft select {
+  padding: 6px 8px;
+  gap: 3px;
+  display: flex;
+  width: 9rem;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-dark-300, #d0d0d0);
+  background: var(--neutral-light-50, #fff);
+  outline: none;
+  font-weight: 600;
+}
+
+.rpTopRight h4 {
+  display: flex;
+  align-items: center;
+  color: #2771d9;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 2.1rem;
+}
+
+.rpTopRight h4 img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.rpTopRight h5 {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Table stlyes */
+.recentPatients .tableWrap {
+  width: 62rem;
+}
+.recentPatientsTable {
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  /* margin-top: 1.5rem; */
+  margin: 1.5rem 0;
+}
+
+.recentPatientsTable thead {
+  /* border-bottom: 1px solid #e6e6e6; */
+  position: sticky;
+  top: 0;
+}
+.recentPatientsTable tbody {
+  margin-top: 0px;
+}
+
+.recentPatientsTable tbody tr {
+  align-items: center;
+}
+.recentPatientsTable th {
+  padding: 5px 6px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #323232;
+  background: #f7fafc;
+  /* margin-bottom: 5rem; */
+}
+.recentPatientsTable td {
+  color: var(--neutral-dark-600, #636363);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  /* padding: 5px 6px; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* display: flex; */
+  padding: 5px 8px 1.3rem;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  gap: 1.7rem;
+  align-items: center;
+}
+
+.recentPatientsTable tbody:before {
+  content: "-";
+  display: block;
+  line-height: 1.2rem;
+  color: transparent;
+}
+
+.recentPatientsTable tbody .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.recentPatientsTable tbody .actions img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
