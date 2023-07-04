@@ -104,7 +104,7 @@ function Sidebar() {
 
       <div className="logOut">
         <img src={logout} alt="" />
-        <h5>Log Out</h5>
+        <h5>Log out</h5>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .sidebar {
   width: 18%;
-  padding: 1.8rem 2.6rem 5.9rem 3.9rem;
+  padding: 1.8rem 2.6rem 5.4rem 2.1rem;
   /* background: red; */
   height: 100%;
   display: flex;
@@ -53,7 +53,7 @@
 }
 
 .siderbarItem img {
-  margin-right: 0.8rem;
+  margin-right: 1.5rem;
 }
 
 .logOut {
@@ -65,11 +65,13 @@
 
 .logOut img {
   margin-right: 1.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .logOut h5 {
   color: var(--neutral-dark-800, #323232);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -90,11 +92,11 @@
   line-height: normal;
   text-decoration: none;
   padding-left: 1.4rem;
-  margin-top: 3rem !important;
+  margin-top: 2.4rem !important;
   display: flex;
   align-items: center;
 }
 
 .addPatientBtn img {
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
 }
