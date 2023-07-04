@@ -1,3 +1,4 @@
+import Calender from "../components/Calender";
 import DashboardBanner from "../components/DashboardBanner";
 import GenderChart from "../components/GenderChart";
 import NumPatientsChart from "../components/NumPatientsChart";
@@ -25,6 +26,7 @@ function Dashboard() {
           <h2>Gender</h2>
           <GenderChart />
         </div>
+        <Calender />
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ function GenderChart() {
           fillColors: ["#2591FC", "#FF5046"],
           radius: 50,
         },
-        fontFamily: "poppins",
+        fontFamily: "Inter",
       },
       //   grid: {
       //     padding: {

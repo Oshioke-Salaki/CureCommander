@@ -29,7 +29,8 @@
   line-height: normal;
 }
 
-.analyticsFilter {
+.analyticsFilter,
+.analyticsFilter:focus {
   display: flex;
   width: 13.8rem;
   padding: 1rem;
@@ -38,7 +39,7 @@
   border-radius: 8px;
   border: 1px solid var(--neutral-dark-300, #d0d0d0);
   background: var(--neutral-light-50, #fff);
-  font-family: "poppins";
+  outline: none;
 }
 
 .dashLeft {
@@ -46,7 +47,7 @@
 }
 
 .genderAnalytics {
-  height: 25.6rem;
+  height: 22.6rem;
   border-radius: 8px;
   background: var(--neutral-light-50, #fff);
   padding: 1.4rem 2rem;

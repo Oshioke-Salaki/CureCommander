@@ -16,7 +16,6 @@
 .siderbarItem {
   color: var(--neutral-dark-800, #323232);
   font-size: 1.8rem;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -66,3 +65,20 @@
   line-height: 1.5rem;
   color: #4b5460;
 } */
+
+.addPatientBtn {
+  color: #2771d9;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  padding-left: 1.4rem;
+  margin-top: 8rem !important;
+  display: flex;
+  align-items: center;
+}
+
+.addPatientBtn img {
+  margin-right: 0.5rem;
+}

@@ -13,7 +13,7 @@ const RouterConfig = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="/spm/payments" element={<SPMPayments />} /> */}
+          <Route path="/patients" element={<Dashboard />} />
           {/* <Route path="/spm/properties" element={<SPMProperties />} />
           <Route path="/spm/properties/:id" element={<SPMProperty />} /> */}
         </Route>

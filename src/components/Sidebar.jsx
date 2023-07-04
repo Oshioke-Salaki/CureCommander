@@ -2,13 +2,14 @@ import "./Sidebar.css";
 import { useParams } from "react-router-dom";
 
 import logout from "./../assets/logout.svg";
+import add from "./../assets/add.svg";
 
 // Non-active icons
 import patientIcon from "./../assets/patients.svg";
 import settingIcon from "./../assets/setting.svg";
 import calenderIcon from "./../assets/calendar.svg";
 // import addPatientIcon from "./../assets/calendar.svg";
-import dashboardIcon from "./../assets/calendar.svg";
+import dashboardIcon from "./../assets/dashboard.svg";
 
 // Active Icons
 import dashboardActiveIcon from "./../assets/dashboardActive.svg";
@@ -26,7 +27,6 @@ function Sidebar() {
   const { id } = useParams();
 
   useEffect(() => {
-    console.log(pathname.substring(5));
     if (id) {
       setActive(pathname.slice(5, pathname.lastIndexOf("/")));
     } else {
@@ -86,6 +86,12 @@ function Sidebar() {
             {item.title}
           </NavLink>
         ))}
+        <NavLink
+          //   to={item.path}
+          className="addPatientBtn"
+        >
+          <img src={add} alt="" /> Add Patient
+        </NavLink>
       </div>
 
       <div className="logOut">

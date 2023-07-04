@@ -24,7 +24,7 @@ function NumPatientsChart() {
           endingShape: "rounded",
         },
       },
-      fontFamily: "poppins",
+      fontFamily: "Inter",
       dataLabels: {
         enabled: false,
       },
@@ -51,7 +51,7 @@ function NumPatientsChart() {
           fillColors: ["#2591FC", "#FF5046"],
           radius: 50,
         },
-        fontFamily: "poppins",
+        fontFamily: "Inter",
       },
     },
   });
