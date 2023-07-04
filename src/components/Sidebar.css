@@ -1,0 +1,68 @@
+.sidebar {
+  width: 18%;
+  padding: 10.7rem 2.6rem 5.9rem 3.9rem;
+  /* background: red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  margin-bottom: 6.4rem;
+}
+
+.siderbarItem {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1.15rem 4.8rem 1.15rem 1.8rem;
+  align-items: center;
+  padding: 0.8rem 2.4rem 0.8rem 1.6rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.2s;
+  display: flex;
+  text-decoration: none;
+}
+
+.siderbarItem.activeItem {
+  background: #2771d9;
+  color: white;
+}
+
+.siderbarItem img {
+  margin-right: 0.8rem;
+}
+
+.logOut {
+  /* margin-top: 9rem; */
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+
+.logOut img {
+  margin-right: 1.5rem;
+}
+
+.logOut h5 {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* .loggedInUserDetails h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #4b5460;
+} */

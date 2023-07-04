@@ -1,0 +1,11 @@
+.dash {
+  display: flex;
+  height: 100vh;
+}
+
+.dashMain {
+  background-color: #e5e5e5;
+  width: 83%;
+  overflow-y: scroll;
+  padding-bottom: 6.7rem;
+}
