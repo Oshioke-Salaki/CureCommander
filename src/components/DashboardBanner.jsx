@@ -5,7 +5,7 @@ function DashboardBanner() {
   const bannerStyle = {
     backgroundImage: `url(${banner})`,
     // backgroundSize: "cover",
-    width: "72.8rem",
+    width: " 62rem",
     backgroundRepeat: "no-repeat",
     height: "12.8rem",
     // paddingTop: "2.9rem",
@@ -13,6 +13,7 @@ function DashboardBanner() {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+    borderRadius: "1rem",
   };
   return (
     <div style={bannerStyle} className="dashboardBanner">
