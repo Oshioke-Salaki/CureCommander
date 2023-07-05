@@ -52,7 +52,7 @@
 }
 
 .genderAnalytics {
-  height: 22.6rem;
+  height: 22.6rem !important;
   border-radius: 8px;
   background: var(--neutral-light-50, #fff);
   padding: 1.4rem 2rem;

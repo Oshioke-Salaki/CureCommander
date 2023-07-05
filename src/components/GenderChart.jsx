@@ -61,8 +61,8 @@ function GenderChart() {
       options={chartOptions.options}
       series={chartOptions.series}
       type="donut"
-      width="105%"
-      height="105%"
+      width="100%"
+      height="100%"
     />
   );
 }
