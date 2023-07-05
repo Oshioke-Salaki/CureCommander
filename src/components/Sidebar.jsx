@@ -14,7 +14,7 @@ import dashboardIcon from "./../assets/dashboard.svg";
 
 // Active Icons
 import dashboardActiveIcon from "./../assets/dashboardActive.svg";
-import patientActiveIcon from "./../assets/dashboardActive.svg";
+import patientActiveIcon from "./../assets/patientsActive.svg";
 import calenderActiveIcon from "./../assets/dashboardActive.svg";
 import settingActiveIcon from "./../assets/dashboardActive.svg";
 

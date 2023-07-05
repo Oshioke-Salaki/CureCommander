@@ -1,6 +1,7 @@
 .patientPage {
   padding: 2.9rem 4rem 0 4rem;
   width: 100%;
+  max-width: 100%;
 }
 
 .patientPage .patientPageTop {
@@ -44,7 +45,7 @@
   max-width: 100% !important;
   color: black;
   border-collapse: collapse;
-  margin-top: 3.6rem;
+  margin-top: 3rem;
   border-collapse: separate;
   border-spacing: 0 15px;
 }
@@ -53,6 +54,23 @@
   /* border-bottom: 1px solid #e6e6e6; */
   position: sticky;
   top: 0;
+}
+
+th,
+td,
+tr {
+  text-align: left;
+}
+
+.patientsTable thead tr th:first-child,
+.patientsTable tbody tr td:first-child {
+  border-radius: 10px 0 0 10px;
+  padding-left: 4rem;
+}
+.patientsTable thead tr th:last-child,
+.patientsTable tbody tr td:last-child {
+  border-radius: 0 10px 10px 0;
+  padding-right: 1rem;
 }
 .patientsTable tbody {
   margin-top: 0px;
@@ -66,36 +84,76 @@
   background: #fff;
 }
 .patientsTable th {
-  padding: 5px 6px;
-  text-align: left;
-  font-size: 1.2rem;
+  color: #3d3d66;
+  font-size: 1.4rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
-  color: #323232;
   background: #f7fafc;
   /* margin-bottom: 5rem; */
+  padding: 2rem 0rem 2rem 0rem;
+  margin-right: 4rem !important;
 }
 .patientsTable td {
-  /* color: var(--neutral-dark-600, #636363);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 12px;
+  color: #70708c;
+  font-size: 1.4rem;
+  font-family: Inter;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
-  padding: 5px 8px 1.3rem;
-  align-items: flex-start;
-  gap: 1.7rem;
-  align-items: center; */
-  /* text-align: center;
-  border: 1px solid black;
-  padding: 5px; */
+  padding: 2rem 0rem 2rem 0rem;
+  margin-right: 4rem !important;
 }
 
-.patientsTable tbody:before {
+/* .patientsTable tbody:before {
   content: "-";
   display: block;
   line-height: 1.2rem;
   color: transparent;
+} */
+
+.tableNav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+.tableNav h6 {
+  color: #70708c;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tableNav .pages {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #2771d9;
+}
+
+.tableNav .pages span {
+  cursor: pointer;
+}
+
+.tableNav .pages span:first-child {
+  margin-right: 1.3rem;
+}
+.tableNav .pages a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: #2771d9;
+}
+
+.tableNav .pages a.activePage {
+  border-radius: 10px;
+  background: #2771d9;
+  padding: 1rem 1.2rem;
+  color: white;
 }

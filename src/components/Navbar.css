@@ -1,5 +1,5 @@
 .topBanner {
-  padding: 1.1rem 16.1rem 1.2rem 4.5rem;
+  padding: 1.1rem 7.4rem 1.2rem 4.5rem;
   background: white;
   display: flex;
   justify-content: space-between;
@@ -56,11 +56,39 @@
   gap: 2.8rem;
 }
 
+.navRight .avatar {
+  display: flex;
+  align-items: center;
+}
+
+.navRight .avatarDet h5 {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.navRight .avatarDet h6 {
+  color: var(--neutral-dark-600, #636363);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.navRight .avatar img {
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-right: 0.6rem;
+}
 .topBanner .navRight .notification {
   width: 2.8rem;
   height: 2.8rem;
 }
-.topBanner .navRight .avatar {
+.topBanner .navRight .avatar img {
   width: 4.3rem;
   height: 4.3rem;
 }

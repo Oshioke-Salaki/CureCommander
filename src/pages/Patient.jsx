@@ -1,7 +1,9 @@
 import "./Patient.css";
 import filter from "./../assets/filter.svg";
-
+import { useState } from "react";
+import { patients } from "./../patients";
 function Patient() {
+  const [curPage, setCurPage] = useState(1);
   return (
     <div className="patientPage">
       <div className="patientPageTop">
@@ -13,27 +15,75 @@ function Patient() {
       <table className="patientsTable">
         <thead>
           <tr>
-            <th>Patient ID</th>
+            <th>Mat. Number</th>
             <th>Patient Name</th>
-            <th>Date Check In</th>
-            <th>Doctor Assigned</th>
-            <th>Disease</th>
-            <th>Status</th>
-            <th>Age</th>
+            <th>Gender</th>
+            <th>Department</th>
+            {/* <th>Date of Birth</th> */}
+            <th>Blood Group</th>
+            <th>Year of Admission</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>#A-122014</td>
-            <td>Kevin Ameh Otobo</td>
-            <td>26 Jan 2023</td>
-            <td>Dr. Kimberly</td>
-            <td>Cold and Flu</td>
-            <td>Admitted</td>
-            <td>27</td>
-          </tr>
+          {patients.slice((curPage - 1) * 10, curPage * 10).map((p) => (
+            <tr key={p.studentId}>
+              <td>{p.matNumber}</td>
+              <td>
+                {p.studentName.length <= 20
+                  ? p.studentName
+                  : p.studentName.slice(0, 20) + "..."}
+              </td>
+              <td>{p.gender === "male" ? "M" : "F"}</td>
+              <td>{p.department.slice(0, 15) + "..."}</td>
+              <td>{p.bloodGroup}</td>
+              <td>{p.yearOfAddmission}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
+      <div className="tableNav">
+        <h6>Showing 10 from {patients.length} data</h6>
+        <div className="pages">
+          <span
+            onClick={() => setCurPage((cur) => (cur === 1 ? cur : cur - 1))}
+          >
+            {"< Previous"}
+          </span>
+          <a
+            href="#"
+            className={curPage === 1 && "activePage"}
+            onClick={() => setCurPage(1)}
+          >
+            1
+          </a>
+          <a
+            href="#"
+            className={curPage === 2 && "activePage"}
+            onClick={() => setCurPage(2)}
+          >
+            2
+          </a>
+          <a
+            href="#"
+            className={curPage === 3 && "activePage"}
+            onClick={() => setCurPage(3)}
+          >
+            3
+          </a>
+          <a
+            href="#"
+            className={curPage === 4 && "activePage"}
+            onClick={() => setCurPage(4)}
+          >
+            4
+          </a>
+          <span
+            onClick={() => setCurPage((cur) => (cur === 4 ? cur : cur + 1))}
+          >
+            {"Next >"}
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
