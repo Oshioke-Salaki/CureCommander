@@ -29,7 +29,8 @@ function Sidebar() {
 
   useEffect(() => {
     if (id) {
-      setActive(pathname.slice(5, pathname.lastIndexOf("/")));
+      // console.log(pathname.slice(1, pathname.lastIndexOf("/")));
+      setActive(pathname.slice(1, pathname.lastIndexOf("/")));
     } else {
       setActive(pathname.substring(1));
     }

@@ -17,3 +17,40 @@ input:focus {
   border: none;
   outline: none;
 }
+
+.Navlink {
+  text-decoration: none;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.1rem;
+}
+
+.formControl label {
+  color: var(--neutral-dark-800, #323232);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1.2rem;
+}
+
+.formControl input {
+  border-radius: 10px;
+  border: 0.5px solid var(--stroke, #cacaca);
+  padding: 1.6rem;
+  color: #323232;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.formControl input::placeholder {
+  color: var(--neutral-dark-600, #636363);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -2,6 +2,8 @@ import "./Patient.css";
 import filter from "./../assets/filter.svg";
 import { useState } from "react";
 import { patients } from "./../patients";
+
+import { NavLink } from "react-router-dom";
 function Patient() {
   const [curPage, setCurPage] = useState(1);
   return (
@@ -27,7 +29,9 @@ function Patient() {
         <tbody>
           {patients.slice((curPage - 1) * 10, curPage * 10).map((p) => (
             <tr key={p.studentId}>
-              <td>{p.matNumber}</td>
+              <NavLink to={`/patients/:${p.studentId}`} className="Navlink">
+                <td>{p.matNumber}</td>
+              </NavLink>
               <td>
                 {p.studentName.length <= 20
                   ? p.studentName
